@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "perfect",
+	"version": "${version}",
+	"name": "perfect mod",
+	"description": "this is a mod (i guess)",
+	"authors": [
+		"solaymanehimite"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/perfect/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"perfect.modid.PerfectMod"
+		],
+		"client": [
+			"perfect.modid.PerfectModClient"
+		],
+		"fabric-datagen": [
+			"perfect.modid.PerfectModDataGenerator"
+		]
+	},
+	"mixins": [
+		"perfect.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
